@@ -4,7 +4,7 @@ import (
   "fmt"
   "os"
   "strings"
-  "./Paquete"
+  "./Operadores"
 )
 func main(){
   fmt.Println("Ingrese Operación")
@@ -12,16 +12,16 @@ func main(){
   scanner.Scan()
   op := scanner.Text()
   if strings.Contains(op,"+") {
-    resultado := Paquete.Sumar(op)
+    resultado := Operadores.Sumar(op)
     fmt.Println(resultado)
   } else if strings.Contains(op,"-") {
-    resultado := Paquete.Restar(op)
+    resultado := Operadores.Restar(op)
     fmt.Println(resultado)
   } else if strings.Contains(op,"*") {
-    resultado := Paquete.Multiplicar(op)
+    resultado := Operadores.Multiplicar(op)
     fmt.Println(resultado)
   }  else if strings.Contains(op,"/") {
-    resultado := Paquete.Dividir(op)
+    resultado := Operadores.Dividir(op)
     fmt.Println(resultado)
   } else {
 
